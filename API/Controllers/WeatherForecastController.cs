@@ -1,6 +1,6 @@
 using Domain;
-using Microsoft.AspNetCore.Mvc;
 using Persistence;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
@@ -34,6 +34,7 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+
     [HttpPost]
     public ActionResult<WeatherForecast> Create()
     {
@@ -47,7 +48,7 @@ public class WeatherForecastController : ControllerBase
             Summary = "Warm"
         };
 
-        _context.WeatherForecast.Add(forecast);
+        _context.WeatherForecasts.Add(forecast);
         var success = _context.SaveChanges() > 0;
 
         if (success) {
