@@ -1,6 +1,6 @@
 namespace Domain;
 
-public class WeatherForecast
+public class EmotionForecast
 {
     public int Id { get; set; }
 

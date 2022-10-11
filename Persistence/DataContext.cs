@@ -9,7 +9,7 @@ namespace Persistence
 {
     public class DataContext: DbContext
     {
-        public DbSet<WeatherForecast> WeatherForecasts { get; set; }
+        public DbSet<EmotionForecast> EmotionForecasts { get; set; }
         public string DbPath {get;}
 
         public DataContext() {

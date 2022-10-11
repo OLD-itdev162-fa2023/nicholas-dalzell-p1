@@ -17,7 +17,7 @@ namespace Persistence.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.9");
 
-            modelBuilder.Entity("Domain.WeatherForecast", b =>
+            modelBuilder.Entity("Domain.EmotionForecast", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -34,7 +34,7 @@ namespace Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("WeatherForecasts");
+                    b.ToTable("EmotionForecasts");
                 });
 #pragma warning restore 612, 618
         }
